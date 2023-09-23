@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <script type="module" src="popup.js"></script>
+</head>
+<body>
+	<header>
+		<img src="images/icon-512.png" />
+		<strong>ytCake</strong>
+		<small>Youtube content Cleaner</small>
+	</header>
+	
+	<div class="divider-y"></div>
+	
+	<main>
+		<ul>
+			<summary>General</summary>
+			
+			<li>
+				<input
+					type="checkbox"
+					id="hide-shorts"
+					value="hide-shorts"
+					tabindex="0"
+				/>
+				<label for="hide-shorts">Hide shorts</label>
+			</li>
+			
+			<li>
+				<input
+					type="checkbox"
+					id="low-case-vid-title"
+					value="low-case-vid-title"
+					tabindex="0"
+				/>
+				<label for="low-case-vid-title">Use low-case video title</label>
+			</li>
+		</ul>
+		
+		<div class="divider-y"></div>
+		
+		<ul>
+			<summary>Search result</summary>
+			
+			<li>
+				<input
+					type="checkbox"
+					id="for-you"
+					tabindex="0"
+				/>
+				<label for="for-you">Hide for you</label>
+			</li>
+			<li>
+				<input
+					type="checkbox"
+					id="for-others"
+					tabindex="0"
+				/>
+				<label for="for-others">Hide for others</label>
+			</li>
+			<li>
+				<input
+					type="checkbox"
+					id="history"
+					tabindex="0"
+				/>
+				<label for="history">Hide history</label>
+			</li>
+			
+		</ul>
+		
+		<div class="divider-y"></div>
+		
+		<details>
+			<summary>Overrided-thumbnail channels</summary>
+			
+			<ul class="channels">
+				<li tabindex="0">
+					<img src="images/icon-512.png" />
+					<label>MKBHD</label>
+					
+					<button class="close">
+						<img src="images/close.svg"/>
+					</button>
+				</li>
+			</ul>
+		</details>
+		
+		<div class="divider-y"></div>
+		
+		<details>
+			<summary>Blocked channels</summary>
+			<ul class="channels">
+				<li tabindex="0">
+					<img src="images/icon-512.png" />
+					<label>MKBHD</label>
+				</li>
+				
+				<li tabindex="0">
+					<img src="images/icon-512.png" />
+					<label>MKBHD</label>
+				</li>
+				
+				<li tabindex="0">
+					<img src="images/icon-512.png" />
+					<label>MKBHD</label>
+				</li>
+			</ul>
+		</details>
+		
+		<details>
+			<summary>Community rules</summary>
+			<ul>
+				<li>
+					<input
+						type="checkbox"
+						id="hide-shorts"
+						value="hide-shorts"
+						tabindex="0"
+					/>
+					<label for="hide-shorts">Remove boder-radius</label>
+				</li>
+			</ul>
+		</details>
+	</mian>
+</body>
+</html>
