@@ -1,11 +1,16 @@
 console.log("Hello World!", browser);
 
-const configuration = {
-	'hide-shorts': false,
-	'low-case-title': false
-}
+const { watchedConfiguration } = safari.extension.globalPage
 
-Object.keys(configuration).forEach
+document.addEventListener("DOMContentLoaded", function() {
+	const checkboxes = document.querySelectorAll('input[type="checkbox"]')
 
-extension.settings.setItem(key, value)
-extension.settings.getItem(key)
+	checkboxes.forEach(checkbox => {
+		const id = checkbox.id
+		// update UI and add change event listener
+		checkbox.checked = watchedConfiguration[id]
+		checkbox.addEventListener('change', function() {
+			watchedConfiguration[id] = this.checked
+		})
+	})
+})
